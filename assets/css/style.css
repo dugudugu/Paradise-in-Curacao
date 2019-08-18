@@ -40,9 +40,15 @@ html {
 
 .card {
   margin-bottom: 15px;
+  -webkit-box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
+  -moz-box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
+  box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
+  }
+
+.about-intro .card-title {
+  font-weight: bold;
+  font-style: italic;
 }
-
-
 
 
 
@@ -83,20 +89,25 @@ html {
 
 
 /* Media queries */
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 1000px;
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331;
   }
-}
 
-@media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 650px;
+  .intro-3,
+  .intro-4,
+  .intro-5 {
+    display: none;
+  }
+
+  .about-intro {
+    padding: 1rem 1rem;
+  }
+
+  }
+
+@media (min-width: 768px) {
+  .about-intro {
+    padding: 1rem 5rem;
   }
 }
