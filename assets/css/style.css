@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Kaushan+Script');
 
-body, 
+body,
 html {
   height: 100%;
   margin: 0;
@@ -34,3 +34,40 @@ html {
 }
 
 
+/* Footer */
+.page-footer {
+  background-color: #1C2331; 
+}
+
+.footer-icons {
+  font-size: 2rem;
+}
+
+.footer-copyright {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* Media queries */
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
