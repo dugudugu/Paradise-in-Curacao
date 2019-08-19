@@ -24,6 +24,7 @@ html {
 
 /* Hero image */
 .cover-image {
+  padding: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   width: 100%;
   height: 50%;
@@ -34,11 +35,13 @@ html {
 }
 
 
+
+/* About cards */
 .about-intro {
   padding: 1rem 10rem;
 }
 
-.card {
+.about-intro .card {
   margin-bottom: 15px;
   -webkit-box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
   -moz-box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
@@ -52,10 +55,41 @@ html {
 
 
 
+/* Hotel cards */
+
+.hotel-cards {
+  padding: 1rem 10rem;
+}
 
 
+.grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  }
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.grid > article img {
+  max-width: 100%;
+  padding: 10px 10px;
+}
 
 
+.text {
+  padding: 20px 20px 20px;
+}
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
+.grid > article:nth-child(1) {
+  grid-row: span 2;
+}
 
 
 
