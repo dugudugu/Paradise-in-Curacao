@@ -34,30 +34,24 @@ html {
   position: relative;
 }
 
-/* Main */
-
-main {
-  display: grid;
-  margin: 20px 50px;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-columns-gap: 1em;
-  grid-template-rows: repeat(4, 1fr) ;
-  grid-rows-gap: 1em;
-  grid-template-areas:
-  ". about about about ."
-  "intro1 intro1 . intro2 intro2"
-  ".  intro3 intro3 . intro4"
-  "intro5 intro5 . . intro4 ";
-}
-
 /* About Curacao */
 
-.about {
-    grid-area: about;
-    height: 100px;
-    width: 100%;
-    text-align: center;
+.about-cards {
+  display: grid;
+  margin: 20px 50px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(3, 1fr) ;
+  grid-row-gap: 1em;
+  grid-template-areas:
+  "intro1 intro1 . intro2 intro2"
+  ".  intro3 intro3 intro4 ."
+  "intro5 intro5 .  intro4 .";
 }
+
+
+
+
 
 .intro1 {
   grid-area: intro1;
@@ -84,8 +78,21 @@ main {
     width: 100%;
 }
 
+.card {
+  padding: 10px;
+}
 
 
+.card-title {
+  font-weight: bold;
+  color: #000;
+  text-align: center!important;
+  font-size: 20px!important;
+}
+
+.card-text {
+  text-align: center;
+}
 
 
 
@@ -114,6 +121,22 @@ main {
   .navbar {
     background-color: #1C2331;
   }
+ 
+ .about-cards {
+  display: grid;
+  margin: 2px 5px;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-column-gap: 1em;
+  grid-template-rows: 3fr ;
+  grid-row-gap: 1em;
+  grid-template-areas:
+  "intro1"
+  "intro2"
+  "intro3";
+}
+ 
+  
 
 
 
