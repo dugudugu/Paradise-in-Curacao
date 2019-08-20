@@ -36,61 +36,6 @@ html {
 
 
 
-/* About cards */
-.about-intro {
-  padding: 1rem 10rem;
-}
-
-.about-intro .card {
-  margin-bottom: 15px;
-  -webkit-box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
-  -moz-box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
-  box-shadow: 10px 10px 11px -4px rgba(62, 116, 130, 0.74);
-  }
-
-.about-intro .card-title {
-  font-weight: bold;
-  font-style: italic;
-}
-
-
-
-/* Hotel cards */
-
-.hotel-cards {
-  padding: 1rem 10rem;
-}
-
-
-.grid { 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  }
-.grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-}
-.grid > article img {
-  max-width: 100%;
-  padding: 10px 10px;
-}
-
-
-.text {
-  padding: 20px 20px 20px;
-}
-.text > button {
-  background: gray;
-  border: 0;
-  color: white;
-  padding: 10px;
-  width: 100%;
-  }
-.grid > article:nth-child(1) {
-  grid-row: span 2;
-}
-
 
 
 
@@ -140,8 +85,3 @@ html {
 
   }
 
-@media (min-width: 768px) {
-  .about-intro {
-    padding: 1rem 5rem;
-  }
-}
