@@ -34,13 +34,55 @@ html {
   position: relative;
 }
 
+/* Main */
 
+main {
+  display: grid;
+  margin: 20px 50px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-columns-gap: 1em;
+  grid-template-rows: repeat(4, 1fr) ;
+  grid-rows-gap: 1em;
+  grid-template-areas:
+  ". about about about ."
+  "intro1 intro1 . intro2 intro2"
+  ".  intro3 intro3 . intro4"
+  "intro5 intro5 . . intro4 ";
+}
 
+/* About Curacao */
 
+.about {
+    grid-area: about;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
 
+.intro1 {
+  grid-area: intro1;
+  width: 100%;
+}
 
+.intro2{
+    grid-area: intro2;
+    width: 100%;
+}
 
+.intro3{
+    grid-area: intro3;
+    width: 100%;
+}
 
+.intro4{
+    grid-area: intro4;
+    width: 100%;
+}
+
+.intro5{
+    grid-area: intro5;
+    width: 100%;
+}
 
 
 
@@ -73,15 +115,7 @@ html {
     background-color: #1C2331;
   }
 
-  .intro-3,
-  .intro-4,
-  .intro-5 {
-    display: none;
-  }
 
-  .about-intro {
-    padding: 1rem 1rem;
-  }
 
   }
 
