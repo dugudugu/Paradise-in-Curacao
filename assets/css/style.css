@@ -34,24 +34,39 @@ html {
   position: relative;
 }
 
-/* About Curacao */
+
+
+/* About Header */
+.about {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.about h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.about p {
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* About Cards*/
 
 .about-cards {
   display: grid;
   margin: 20px 50px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr) ;
   grid-column-gap: 1em;
-  grid-template-rows: repeat(3, 1fr) ;
+  grid-template-rows: repeat(3, 200px) ;
   grid-row-gap: 1em;
   grid-template-areas:
-  "intro1 intro1 . intro2 intro2"
-  ".  intro3 intro3 intro4 ."
-  "intro5 intro5 .  intro4 .";
+  "intro1 intro1 image1 intro2 intro2"
+  "image2  intro3 intro3 intro4 image4"
+  "intro5 intro5 image3  intro4 .";
 }
-
-
-
-
 
 .intro1 {
   grid-area: intro1;
@@ -78,10 +93,33 @@ html {
     width: 100%;
 }
 
+.about-cards img {
+  width: 100%;
+  height: 100%;
+}
+
+.image1 {
+   grid-area: image1;
+}
+
+.image12 {
+   grid-area: image2;
+}
+
+.image3 {
+   grid-area: image3;
+}
+
+.image4 {
+   grid-area: image4;
+}
+
+
+/* All Cards */
+
 .card {
   padding: 10px;
 }
-
 
 .card-title {
   font-weight: bold;
@@ -93,6 +131,73 @@ html {
 .card-text {
   text-align: center;
 }
+
+
+
+/* Hotel Header */
+.hotels {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.hotels h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.hotels p {
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* Hotel Cards*/
+
+.hotel-cards {
+  display: grid;
+  margin: 20px 50px;
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(2, 300px) ;
+  grid-row-gap: 1em;
+  grid-template-areas:
+  "hotel1 hotel1 hotel2 hotel3"
+  "hotel1 hotel1 hotel4 hotel5";
+}
+
+.hotel1 {
+  grid-area: hotel1;
+  width: 100%;
+}
+
+.hotel2{
+    grid-area: hotel2;
+    width: 100%;
+}
+
+.hotel3{
+    grid-area: hotel3;
+    width: 100%;
+}
+
+.hotel4{
+    grid-area: hotel4;
+    width: 100%;
+}
+
+.hotel5{
+    grid-area: hotel5;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,15 +232,16 @@ html {
   margin: 2px 5px;
   width: 100%;
   grid-template-columns: 100%;
-  grid-column-gap: 1em;
-  grid-template-rows: 3fr ;
+  grid-template-rows: 3fr;
   grid-row-gap: 1em;
   grid-template-areas:
   "intro1"
   "intro2"
   "intro3";
 }
- 
+ .about-cards img {
+  display: none;
+}
   
 
 
