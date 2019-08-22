@@ -121,14 +121,14 @@ html {
   padding: 10px;
 }
 
-.card-title {
+.about-cards .card-title {
   font-weight: bold;
   color: #000;
   text-align: center!important;
   font-size: 20px!important;
 }
 
-.card-text {
+.about-cards .card-text {
   text-align: center;
 }
 
@@ -137,6 +137,7 @@ html {
 /* Hotel Header */
 .hotels {
   text-align: center;
+  font-weight: bold;
   padding-top: 50px;
   padding-bottom: 20px;
 }
@@ -148,6 +149,7 @@ html {
 
 .hotels p {
   font-style: italic;
+  font-weight: normal;
   font-size: 20px;
 }
 
@@ -156,49 +158,95 @@ html {
 .hotel-cards {
   display: grid;
   margin: 20px 50px;
-  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-columns: repeat(2, 1fr) ;
   grid-column-gap: 1em;
-  grid-template-rows: repeat(4, 200px) ;
+  grid-template-rows: repeat(4, 150px) ;
   grid-row-gap: 1em;
   grid-template-areas:
-  "hotel1 hotel1 hotel2"
-  "hotel1 hotel1 hotel3"
-  "hotel1 hotel1 hotel4"
-  "hotel1 hotel1 hotel5";
+  "hotel1 hotel2"
+  "hotel1 hotel3"
+  "hotel1 hotel4"
+  "hotel1 hotel5";
 }
 
 .hotel1 {
   grid-area: hotel1;
+  flex-direction: column;
   width: 100%;
+  text-align: center;
 }
+
+.hotel1 .card-body {
+  padding: 10px 10px;
+}
+
+/* Main Card: Hotel 1 */
+
+.hotel1 .card-body .list-unstyled .fas{
+  color: gold;
+}
+
+.fa-wifi:before {
+    content: "\f1eb";
+    padding: 10px;
+    color: green;
+}
+
+.fa-swimmer:before {
+    content: "\f5c4";
+    padding: 10px;
+    color: blue;
+}
+
+.fa-umbrella-beach:before {
+    content: "\f5ca";
+    padding: 5px;
+    color: coral;
+}
+
+/* Other Hotel Cards*/
 
 .hotel2{
     grid-area: hotel2;
+    display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
 .hotel3{
     grid-area: hotel3;
+    display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
 .hotel4{
     grid-area: hotel4;
+    display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
 .hotel5{
     grid-area: hotel5;
+    display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
-.hotel2 img {
-  float: left;
- height: 50px;
-  width: 50px;
+.hotel-cards .card .text-block {
+  padding-left: 20px;
+}
+
+.hotel-cards .card .card-title {
+  text-align: left;
+  font-weight: bold;
+  color: #000;
+  font-size: 20px!important;
 }
 
 
+/* Car Rental Cards*/
 
 
 
