@@ -246,9 +246,17 @@ html {
 }
 
 
-/* Car Rental Cards*/
+/* Restaurants*/
 
-
+.restaurants {
+  display: grid;
+  margin: 20px 50px;
+  grid-template-columns: repeat(2, 1fr) ;
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(1, 150px) ;
+  grid-template-areas:
+  ;
+}
 
 
 
