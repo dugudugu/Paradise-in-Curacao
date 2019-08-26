@@ -39,7 +39,9 @@ html {
 /* Headers */
 .about,
 .hotels,
-.restaurant-header {
+.restaurant-header,
+.car-header,
+.places {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -47,19 +49,24 @@ html {
 
 .about h1,
 .hotels h1,
-.restaurant-header h1 {
+.restaurant-header h1,
+.car-header h1,
+.places h1{
   font-weight: bold;
   font-size: 30px;
 }
 
 .about p, 
 .hotels p,
-.restaurant-header p {
+.restaurant-header p,
+.places p{
   font-style: italic;
   font-size: 20px;
 }
 
-
+.card {
+  padding: 10px;
+}
 
 
 /* About Cards*/
@@ -123,13 +130,6 @@ html {
    grid-area: image4;
 }
 
-
-/* All Cards */
-
-.card {
-  padding: 10px;
-}
-
 .about-cards .card-title {
   font-weight: bold;
   color: #000;
@@ -161,6 +161,8 @@ html {
   "hotel1 hotel5";
 }
 
+/* Main Card: Hotel 1 */
+
 .hotel1 {
   grid-area: hotel1;
   flex-direction: column;
@@ -171,8 +173,6 @@ html {
 .hotel1 .card-body {
   padding: 10px 10px;
 }
-
-/* Main Card: Hotel 1 */
 
 .hotel1 .card-body .list-unstyled .fas{
   color: gold;
@@ -195,6 +195,7 @@ html {
     padding: 5px;
     color: coral;
 }
+
 
 /* Other Hotel Cards*/
 
@@ -236,6 +237,7 @@ html {
   color: #000;
   font-size: 20px!important;
 }
+
 
 
 /* Restaurants*/
@@ -291,14 +293,9 @@ background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
 background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 
-/* Car Rental*/
 
-.car-header h1 {
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 2em;
-}
+
+/* Car Rental*/
 
 .car-cards {
   display: grid;
@@ -364,15 +361,15 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   text-align: center;
 }
 
-.container {
+.car-cards .container {
   position: relative;
 }
 
-.container:hover .car-img {
+.car-cards .container:hover .car-img {
   opacity: 0.3;
 }
 
-.container:hover .cartext {
+.car-cards .container:hover .cartext {
   opacity: 1;
 }
 
@@ -381,14 +378,98 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   color: white;
   font-size: 20px;
   padding: 5px;
-  font-style: normal;
 }
 
 
+/* Places to Visit*/
+
+.places-cards {
+  display: grid;
+  margin: 20px 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(2, 250px);
+  grid-row-gap: 1em;
+  grid-template-areas:
+  "place1 place2 place3 place4"
+  "place5 place6 place7 place8";
+}
+
+.place1 {
+  grid-area: place1;
+  width: 100%;
+}
+.place2 {
+  grid-area: place2;
+  width: 100%;
+}
+.place3 {
+  grid-area: place3;
+  width: 100%;
+}
+.place4 {
+  grid-area: place4;
+  width: 100%;
+}
+.place5 {
+  grid-area: place5;
+  width: 100%;
+}
+.place6 {
+  grid-area: place6;
+  width: 100%;
+}
+.place7 {
+  grid-area: place7;
+  width: 100%;
+}
+.place8 {
+  grid-area: place8;
+  width: 100%;
+}
 
 
+/* Basic styling from: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 
+.places-cards .place-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
 
+ .place-container {
+  position: relative;
+}
+
+.placetext {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.place-container:hover .place-img {
+  opacity: 0.3;
+}
+
+.place-container:hover .placetext {
+  opacity: 1;
+}
+
+.placetext .text {
+  background-color: rgba(51, 8, 104, 0.60);
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
 
 
 
