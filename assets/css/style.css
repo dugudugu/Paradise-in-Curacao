@@ -36,22 +36,31 @@ html {
 
 
 
-/* About Header */
-.about {
+/* Headers */
+.about,
+.hotels,
+.restaurant-header {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 20px;
 }
 
-.about h1 {
+.about h1,
+.hotels h1,
+.restaurant-header h1 {
   font-weight: bold;
   font-size: 30px;
 }
 
-.about p {
+.about p, 
+.hotels p,
+.restaurant-header p {
   font-style: italic;
   font-size: 20px;
 }
+
+
+
 
 /* About Cards*/
 
@@ -134,24 +143,7 @@ html {
 
 
 
-/* Hotel Header */
-.hotels {
-  text-align: center;
-  font-weight: bold;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
 
-.hotels h1 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.hotels p {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-}
 
 /* Hotel Cards*/
 
@@ -255,12 +247,16 @@ html {
   grid-column-gap: 1em;
   grid-template-rows: repeat(1, 500px) ;
   grid-template-areas:
-  "rest-sel rest-list";
+  "rest-list rest-map";
 }
 
-.restaurant-selection {
-  grid-area: rest-sel;
-  width: 100%
+#map_canvas {
+  height: 100%;
+}
+
+.restaurant-map {
+  grid-area: rest-map;
+  width: 100%;
 }
 
 .restaurant-list {
@@ -276,7 +272,7 @@ html {
 
 
 
-/*https://mdbootstrap.com/docs/jquery/javascript/scroll/*/
+/*Credit for the scrolbar to :https://mdbootstrap.com/docs/jquery/javascript/scroll/*/
 
 .scrollbar-morpheus-den::-webkit-scrollbar-track {
 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
@@ -295,8 +291,98 @@ background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
 background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 
+/* Car Rental*/
+
+.car-header h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.car-cards {
+  display: grid;
+  margin: 20px 50px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 2em;
+  grid-template-rows: repeat(2, 150px);
+  grid-row-gap: 2em;
+  grid-template-areas:
+  ". car1 car2 car3 ."
+  ". car4 car5 car6 .";
+}
+
+.car1 {
+  grid-area: car1;
+  width: 100%;
+}
+.car2 {
+  grid-area: car2;
+  width: 100%;
+}
+.car3 {
+  grid-area: car3;
+  width: 100%;
+}
+.car4 {
+  grid-area: car4;
+  width: 100%;
+}
+.car5 {
+  grid-area: car5;
+  width: 100%;
+}
+.car6 {
+  grid-area: car6;
+  width: 100%;
+}
 
 
+/* Basic styling from: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+
+.car-img {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cartext {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+.container:hover .car-img {
+  opacity: 0.3;
+}
+
+.container:hover .cartext {
+  opacity: 1;
+}
+
+.cartext .text {
+  background-color: rgba(51, 8, 104, 0.60);
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  font-style: normal;
+}
 
 
 
