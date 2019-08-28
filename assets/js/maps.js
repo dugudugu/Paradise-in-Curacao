@@ -129,8 +129,6 @@ var locations = [
         }
   })
   
- 
- 
   $('.rest').hover(
   function() {
      if($(this).attr('data-lat') != undefined && $(this).attr('data-lng') != undefined ) {
@@ -147,3 +145,10 @@ var locations = [
   function() {
   });
  
+ /* Hover function for restaurant list */
+ 
+ let list = document.getElementById("list");
+ 
+ list.addEventListener("mouseover", function(event) {
+   event.style.backgroundColor = "#599bb3"
+ });
