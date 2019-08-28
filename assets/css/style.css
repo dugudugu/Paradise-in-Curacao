@@ -80,8 +80,8 @@ html {
   grid-row-gap: 1em;
   grid-template-areas:
   "intro1 intro1 image1 intro2 intro2"
-  "image2  intro3 intro3 intro4 image4"
-  "intro5 intro5 image3  intro4 .";
+  "image2  intro3 intro3 intro3 image4"
+  "intro5 intro5 image3  intro4 intro4";
 }
 
 .intro1 {
