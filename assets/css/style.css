@@ -11,7 +11,7 @@ html {
 
 
 
-/* Navbar animation */
+/* Navbar */
 .navbar {
   background-color: #5fa6c0;
   padding: 5px 20px;
@@ -75,7 +75,7 @@ html {
 .about-cards {
   display: grid;
   margin: 20px 50px;
-  grid-template-columns: repeat(5, 1fr) ;
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 1em;
   grid-template-rows: repeat(3, 200px) ;
   grid-row-gap: 1em;
@@ -98,6 +98,7 @@ html {
 .intro3{
     grid-area: intro3;
     width: 100%;
+    justify-content: center;
 }
 
 .intro4{
@@ -119,7 +120,7 @@ html {
    grid-area: image1;
 }
 
-.image12 {
+.image2 {
    grid-area: image2;
 }
 
@@ -349,7 +350,7 @@ a {
 }
 
 .restaurant-list ul li:hover {
-  background-color: rgba(48, 97, 115, 0.20);
+  background-color: rgba(95, 165, 191, 0.2);
 }
 
 /*Credit for the scrolbar on the list :https://mdbootstrap.com/docs/jquery/javascript/scroll/*/
@@ -378,7 +379,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   margin: 20px 50px;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 2em;
-  grid-template-rows: repeat(2, 150px);
+  grid-template-rows: repeat(2, 300px);
   grid-row-gap: 2em;
   grid-template-areas:
   ". car1 car2 car3 ."
@@ -551,7 +552,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 /* Footer */
 .page-footer {
-  background-color: #2d4e5a; 
+  background-color: #5fa6c0; 
 }
 
 .footer-icons {
@@ -570,27 +571,98 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 /* Media queries */
 @media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #2d4e5a;
+    .navbar {
+    background-color: rgba(95, 165, 191, 0.2);
   }
- 
- .about-cards {
+  
+    .navbar li {
+      background-color: #5fa6c0;
+    }
+  
+    .about, .hotels, .restaurant-header, .car-header, .places {
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+  
+    .card{
+      justify-content: center;
+    }
+  
+   .about-cards {
   display: grid;
   margin: 2px 5px;
-  width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 3fr;
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(5, 250px) ;
   grid-row-gap: 1em;
   grid-template-areas:
   "intro1"
+  "image2"
   "intro2"
+  "image1"
   "intro3";
 }
- .about-cards img {
+   .intro4, .intro5, .image3, .image4  {
   display: none;
-}
+} 
   
+    .hotel-cards {
+    display: grid;
+    margin: 2px 5px;
+    grid-template-columns: 1fr ;
+    grid-column-gap: 1em;
+    grid-template-rows: repeat(4, 200px) ;
+    grid-row-gap: 1em;
+    grid-template-areas:
+    "hotel2"
+    "hotel3"
+    "hotel4"
+    "hotel5";
+  }
+    .hotel1 {
+    display: none;
+  }
 
+    .restaurants {
+  display: grid;
+  margin: 2px 5px;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(2, 1fr) ;
+  grid-template-areas:
+  "rest-list" 
+  "rest-map";
+}
 
+    .car-cards {
+  display: grid;
+  margin: 2px 5px;
+  grid-template-columns: repeat(2, 50%);
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(2, 150px);
+  grid-row-gap: 1em;
+  grid-template-areas:
+  "car1 car2" 
+  "car3 car4";
+}
+    .car5, .car6 {
+    display: none;
+  }
+
+    .places-cards {
+    display: grid;
+    margin: 2px 5px;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 1em;
+    grid-template-rows: repeat(2, 150px);
+    grid-row-gap: 1em;
+    grid-template-areas:
+    "place1 place2"
+    "place5 place6";
+}
+    .place3, .place4, .place7, .plcae8 {
+    display: none;
+  }
 }
 
