@@ -345,6 +345,10 @@ a {
   overflow: auto;
 }
 
+.restaurant-list ul li:hover {
+  background-color: rgba(48, 97, 115, 0.20);
+}
+
 /*Credit for the scrolbar on the list :https://mdbootstrap.com/docs/jquery/javascript/scroll/*/
 
 .scrollbar-morpheus-den::-webkit-scrollbar-track {
@@ -362,15 +366,6 @@ border-radius: 10px;
 background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
 background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
 background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
-
-
-
-
-
-
-
-
-
 
 
 /* Car Rental*/
@@ -551,11 +546,9 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 
 
-
-
 /* Footer */
 .page-footer {
-  background-color: #1C2331; 
+  background-color: #2d4e5a; 
 }
 
 .footer-icons {
@@ -575,7 +568,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 /* Media queries */
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #1C2331;
+    background-color: #2d4e5a;
   }
  
  .about-cards {
