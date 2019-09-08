@@ -14,7 +14,6 @@ h5 {
     font-size: 20px!important;
 }
 
-
 /* Navbar */
 .navbar {
   background-color: #5fa6c0;
@@ -26,7 +25,6 @@ h5 {
   font-size: 20px;
   margin-left: 10px;
 }
-
 
 /* Hero image */
 .cover-image {
@@ -72,10 +70,6 @@ h5 {
   padding: 10px;
   overflow: auto;
 }
-
-
-
-
 
 /* About Cards*/
 
@@ -146,9 +140,6 @@ h5 {
 .about-cards .card-text {
   text-align: center;
 }
-
-
-
 
 /* Hotel Cards*/
 
@@ -242,8 +233,6 @@ h5 {
   color: #000;
   font-size: 20px!important;
 }
-
-
 
 /* Restaurants*/
 
@@ -340,7 +329,6 @@ a {
     color: #fff;
     background-color: transparent;
 }
-
 
 .restaurant-list {
   grid-area: rest-list;
@@ -551,22 +539,22 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 }
 
 
-
-
-
-
 /* Media queries */
 @media only screen and (max-width: 768px) {
+  main {
+    margin: 5px 5px!important;
+  }
+  
   .navbar {
     background-color: rgba(95, 165, 191, 0.2);
   }
+  .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
 
   .navbar li {
     background-color: #5fa6c0;
-  }
-
-  main {
-    margin: 5px 5px!important;
   }
 
   .about,
