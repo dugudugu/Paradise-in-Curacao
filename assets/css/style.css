@@ -536,18 +536,6 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 .page-footer {
   background-color: #5fa6c0; 
@@ -569,92 +557,94 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 /* Media queries */
 @media only screen and (max-width: 768px) {
-    .navbar {
+  .navbar {
     background-color: rgba(95, 165, 191, 0.2);
   }
-  
-    .navbar li {
-      background-color: #5fa6c0;
-    }
-    
-    main {
-      margin: 5px 5px;
-    }
-  
-    .about, .hotels, .restaurant-header, .car-header, .places {
-      text-align: center;
-      padding-top: 25px;
-      padding-bottom: 10px;
-    }
-  
-    .card{
-      justify-content: center;
-    }
-  
-   .about-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 1em;
-  grid-template-rows: repeat(5, 250px) ;
-  grid-row-gap: 1em;
-  grid-template-areas:
-  "intro1"
-  "image2"
-  "intro2"
-  "image1"
-  "intro3";
-}
-   .intro4, .intro5, .image3, .image4  {
-  display: none;
-} 
-  
-    .hotel-cards {
+
+  .navbar li {
+    background-color: #5fa6c0;
+  }
+
+  main {
+    margin: 5px 5px!important;
+  }
+
+  .about,
+  .hotels,
+  .restaurant-header,
+  .car-header,
+  .places {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card {
+    justify-content: center;
+  }
+
+  .about-cards {
     display: grid;
-    grid-template-columns: 1fr ;
+    margin: 2px 5px;
+    grid-template-columns: 1fr;
     grid-column-gap: 1em;
-    grid-template-rows: repeat(4, 200px) ;
+    grid-template-rows: repeat(5, 250px);
     grid-row-gap: 1em;
-    grid-template-areas:
-    "hotel2"
-    "hotel3"
-    "hotel4"
-    "hotel5";
+    grid-template-areas: "intro1" "image2" "intro2" "image1" "intro3";
   }
-    .hotel1 {
+  .intro4,
+  .intro5,
+  .image3,
+  .image4 {
     display: none;
   }
 
-
-    .restaurants {
-    display: none;
-}
-
-
-    .car-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1vw);
-  grid-column-gap: 1em;
-  grid-template-rows: repeat(2, 150px);
-  grid-row-gap: 1em;
-  grid-template-areas:
-  ". car1 car2 ." 
-  ". car3 car4 .";
-}
-    .car5, .car6 {
-    display: none;
-  }
-
-    .places-cards {
+  .hotel-cards {
     display: grid;
+    margin: 2px 5px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    grid-template-rows: repeat(4, 200px);
+    grid-row-gap: 1em;
+    grid-template-areas: "hotel2" "hotel3" "hotel4" "hotel5";
+  }
+  .hotel1 {
+    display: none;
+  }
+
+  .restaurants {
+    display: none;
+  }
+
+  .car-cards {
+    display: grid;
+    margin: 2px 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-template-rows: repeat(2, 100px);
+    grid-row-gap: 1em;
+    grid-template-areas: "car1 car2" "car3 car4";
+  }
+  .car5,
+  .car6 {
+    display: none;
+  }
+
+  .places-cards {
+    display: grid;
+    margin: 2px 5px;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
     grid-template-rows: repeat(2, 150px);
     grid-row-gap: 1em;
-    grid-template-areas:
-    "place1 place2"
-    "place5 place6";
-}
-    .place3, .place4, .place7, .place8 {
+    grid-template-areas: "place1 place2" "place5 place6";
+  }
+  .place3,
+  .place4,
+  .place7,
+  .place8 {
     display: none;
   }
 }
