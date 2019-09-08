@@ -8,7 +8,11 @@ html {
   font-size: 1rem;
 }
 
-
+h5 {
+    font-weight: bold;
+    color: #000;
+    font-size: 20px!important;
+}
 
 
 /* Navbar */
@@ -68,6 +72,9 @@ html {
   padding: 10px;
   overflow: auto;
 }
+
+
+
 
 
 /* About Cards*/
@@ -132,11 +139,8 @@ html {
    grid-area: image4;
 }
 
-.about-cards .card-title {
-  font-weight: bold;
-  color: #000;
+.about-cards h5 {
   text-align: center!important;
-  font-size: 20px!important;
 }
 
 .about-cards .card-text {
@@ -379,7 +383,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   margin: 20px 50px;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 2em;
-  grid-template-rows: repeat(2, 300px);
+  grid-template-rows: repeat(2, 250px);
   grid-row-gap: 2em;
   grid-template-areas:
   ". car1 car2 car3 ."
@@ -427,34 +431,12 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   transform: translate(-50%, -50%);
 }
 
-.cartext {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .car-cards .container {
   position: relative;
 }
 
 .car-cards .container:hover .car-img {
-  opacity: 0.3;
-}
-
-.car-cards .container:hover .cartext {
-  opacity: 1;
-}
-
-.cartext .text {
-  background-color: rgba(51, 8, 104, 0.60);
-  color: white;
-  font-size: 20px;
-  padding: 5px;
+  opacity: 0.5;
 }
 
 
@@ -534,7 +516,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 }
 
 .place-container:hover .place-img {
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .place-container:hover .placetext {
@@ -542,7 +524,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 }
 
 .placetext .text {
-  background-color: rgba(51, 8, 104, 0.60);
+  background-color: rgba(95, 165, 191);
   color: white;
   font-size: 20px;
   padding: 5px;
@@ -661,7 +643,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
     "place1 place2"
     "place5 place6";
 }
-    .place3, .place4, .place7, .plcae8 {
+    .place3, .place4, .place7, .place8 {
     display: none;
   }
 }
