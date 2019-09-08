@@ -393,47 +393,36 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 .car1 {
   grid-area: car1;
   width: 100%;
+  text-align: center;
 }
 .car2 {
   grid-area: car2;
   width: 100%;
+  text-align: center;
 }
 .car3 {
   grid-area: car3;
   width: 100%;
+  text-align: center;
 }
 .car4 {
   grid-area: car4;
   width: 100%;
+  text-align: center;
 }
 .car5 {
   grid-area: car5;
   width: 100%;
+  text-align: center;
 }
 .car6 {
   grid-area: car6;
   width: 100%;
+  text-align: center;
 }
 
 
 /* Basic styling from: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
-
-.car-img {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.car-cards .container {
-  position: relative;
-}
 
 .car-cards .container:hover .car-img {
   opacity: 0.5;
@@ -531,6 +520,33 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 }
 
 
+/* Mobile list Styling */
+
+.mobile-rest {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.fa-angle-double-right:before {
+    content: "\f101";
+    color: #5fa6c0;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 .page-footer {
@@ -560,6 +576,10 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
     .navbar li {
       background-color: #5fa6c0;
     }
+    
+    main {
+      margin: 5px 5px;
+    }
   
     .about, .hotels, .restaurant-header, .car-header, .places {
       text-align: center;
@@ -573,8 +593,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   
    .about-cards {
   display: grid;
-  margin: 2px 5px;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   grid-column-gap: 1em;
   grid-template-rows: repeat(5, 250px) ;
   grid-row-gap: 1em;
@@ -591,7 +610,6 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   
     .hotel-cards {
     display: grid;
-    margin: 2px 5px;
     grid-template-columns: 1fr ;
     grid-column-gap: 1em;
     grid-template-rows: repeat(4, 200px) ;
@@ -606,27 +624,21 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
     display: none;
   }
 
+
     .restaurants {
-  display: grid;
-  margin: 2px 5px;
-  grid-template-columns: 1fr;
-  grid-column-gap: 1em;
-  grid-template-rows: repeat(2, 1fr) ;
-  grid-template-areas:
-  "rest-list" 
-  "rest-map";
+    display: none;
 }
+
 
     .car-cards {
   display: grid;
-  margin: 2px 5px;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(4, 1vw);
   grid-column-gap: 1em;
   grid-template-rows: repeat(2, 150px);
   grid-row-gap: 1em;
   grid-template-areas:
-  "car1 car2" 
-  "car3 car4";
+  ". car1 car2 ." 
+  ". car3 car4 .";
 }
     .car5, .car6 {
     display: none;
@@ -634,8 +646,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
     .places-cards {
     display: grid;
-    margin: 2px 5px;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
     grid-template-rows: repeat(2, 150px);
     grid-row-gap: 1em;
