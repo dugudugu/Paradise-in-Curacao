@@ -24,14 +24,14 @@ The inspiration for this page can from planning various vacations. When planning
 For the webframe I have created two diffrent versions. One for mobile devices (max-width: 768px) and one for larger devices. The idea for the mobile version is to keep everything simple, and minimize the usage of mobile data to load the webpage. 
 <div align="center">
 	<a href="https://dugudugu.github.io/Paradise-in-Curacao/">
-	<h3>Desktop Version (min-width: 768px)</h3>
-	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/images/webframe-pc.jpg"/></a>
+	<h4>Desktop Version (min-width: 768px)</h4>
+	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/images/webframe-pc.jpg"/></a>
 </div>
 
 <div align="center">
 	<a href="https://dugudugu.github.io/Paradise-in-Curacao/">
-	<h3>Mobile Version (max-width: 768px)</h3>
-	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/images/webframe-mobile.jpg"/></a>
+	<h4>Mobile Version (max-width: 768px)</h4>
+	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/images/webframe-mobile.jpg"/></a>
 </div>
 
 
