@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Kaushan+Script');
 
-body,
-html {
+body {
   height: 100%;
   margin: 0;
-  font-family: 'Alegreya';
-  font-size: 1rem;
+  font-family: 'Alegreya', serif;
+  font-size: 15px;
 }
 
 h5 {
@@ -14,24 +12,37 @@ h5 {
     font-size: 20px!important;
 }
 
+a {
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
+  display: flex;
   background-color: #5fa6c0;
   padding: 5px 20px;
 }
 
+.nav-link {
+  display: block;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
 .nav-item {
-  font-family: 'Alegreya';
+  font-family: 'Alegreya', serif;
   font-size: 20px;
   margin-left: 10px;
 }
 
+
 /* Hero image */
 .cover-image {
   padding: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   width: 100%;
-  height: 50%;
+  height: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,10 +336,6 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408
 	top:1px;
 }
 
-a {
-    color: #fff;
-    background-color: transparent;
-}
 
 .restaurant-list {
   grid-area: rest-list;
@@ -345,23 +352,7 @@ a {
   background-color: rgba(95, 165, 191, 0.2);
 }
 
-/*Credit for the scrolbar on the list :https://mdbootstrap.com/docs/jquery/javascript/scroll/*/
 
-.scrollbar-morpheus-den::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-color: #F5F5F5;
-border-radius: 10px; }
-
-.scrollbar-morpheus-den::-webkit-scrollbar {
-width: 12px;
-background-color: #F5F5F5; }
-
-.scrollbar-morpheus-den::-webkit-scrollbar-thumb {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
-background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
-background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 
 /* Car Rental*/
@@ -376,6 +367,11 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
   grid-template-areas:
   ". car1 car2 car3 ."
   ". car4 car5 car6 .";
+}
+
+.car-img {
+  width: 100%;
+  max-height: 100%;
 }
 
 .car1 {
@@ -502,7 +498,7 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 
 .placetext .text {
   background-color: rgba(95, 165, 191);
-  color: white;
+  color: #000;
   font-size: 20px;
   padding: 5px;
 }
@@ -534,8 +530,8 @@ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
 }
 
 .footer-copyright {
-  color: #fff;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 25px;
 }
 
 
