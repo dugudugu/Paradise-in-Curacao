@@ -19,25 +19,26 @@ The inspiration for this page can from planning various vacations. When planning
 - As some that that has already booked there vacation to Curacao, I would like this webpage to give them any information that they’ve missed
 
 
-### Webframe:
+### Wireframe:
 
 For the webframe I have created two diffrent versions. One for mobile devices (max-width: 768px) and one for larger devices. The idea for the mobile version is to keep everything simple, and minimize the usage of mobile data to load the webpage. 
 <div align="center">
 	<a href="https://dugudugu.github.io/Paradise-in-Curacao/">
 	<h4>Desktop Version (min-width: 768px)</h4>
-	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/images/webframe-pc.jpg"/></a>
+	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/wireframes/wireframe-pc.jpg"/></a>
 </div>
 
 <div align="center">
 	<a href="https://dugudugu.github.io/Paradise-in-Curacao/">
 	<h4>Mobile Version (max-width: 768px)</h4>
-	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/images/webframe-mobile.jpg"/></a>
+	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/wireframes/wireframe-mobile.jpg"/></a>
 </div>
 
 
 ## Features
 
 ### Existing features
+
 1.	Navbar – Consists of the Paradise in Curacao logo which returns the user to the top of the webpage. There are also links to the “About”, “Hotels”, “Restaurants”, Car Rentals” and “Activities”. The navbar will scroll with the webpage. 
 2.	About – The about section includes 5 facts and 4 images of Curacao. With the last two facts, the user is able to click on the title and will be directed to an external webpage with more information about the fact. 
 3.	Hotels – Directs the user to the “Hotels” section of the webpage which will display 5 hotels. The first hotel will have a more details information about it and the other 4 will have a short description. The titles of the hotels will be clickable, which will redirect the user to an external page where the user will be able to make a reservation.
@@ -47,23 +48,25 @@ For the webframe I have created two diffrent versions. One for mobile devices (m
 
 
 ### Future features
+
 * Linking the ratings from external page to this webpage, for example restaurant ratings according to the reviews
-* Adding google maps marking coorinats from database instead of writing in the JS file
+* Adding google maps marking coorinats from database instead of writing in a JSON file
+* Add intersection observer to the webpage to improve loading speed
+* Reduce image size to lower the ammount op dat usage and improve loading speed
 
-## Technologies used
+## List of technologies used
 
-* For the making of the webframe [InVision App](https://www.invisionapp.com/) has been used
-* The workspace used to create this webpage [Cloud9 IDE](https://aws.amazon.com/cloud9/)
-* For section, navigation and layout ideas [Material Design for Bootstrap](https://mdbootstrap.com/) was used
-* The following languages were used to create this webpage:
-	- For the markups[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-	- For the styling of this webpage[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
-	- For the Google Maps clusters, marker, info windows and hover over the restaurant list[Java Script](https://www.w3schools.com/js/)
-* To change the default font of the webpage [Google Fonts](https://fonts.google.com/) was used
-* For the icons [Font Awesome](https://fontawesome.com/) was used
-* The core CSS syling and layout was done using [Bootstrap 4](https://getbootstrap.com/)
-* To style buttons [CSS Button Generator](https://www.bestcssbuttongenerator.com/) 
-* Other technologies used include: [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools/), [Google Maps Platform](https://cloud.google.com/maps-platform/), [YouTube](https://www.youtube.com/) and [Stack Overflow](https://stackoverflow.com/)
+* InVision
+* Cloud9 IDE
+* Material Design for Bootstrap
+* HTML
+* CSS
+* JavaScript
+* Google Fonts
+* Font Awesome
+* CSS Button Generator
+* Google Maps Platform
+* Code Validators and Beautifiers: CSS Compressor, Terser REPL, CSS Validator, HTML Validator and Web.dev
 
 
 ## Testing
@@ -110,7 +113,7 @@ This project has been build in [Cloud9 IDE](https://aws.amazon.com/cloud9/), com
 For the Images of the webpage the following were used:
 	- [Booking.com](https://www.booking.com/)
 	- [Tripadvisor](http://tripadvisor.com/)
-	- [Just Drive Curacao](https://www.justdrivecuracao.com/)
+	- [Platina Car Rental](https://www.platinacarrental.com/)
 	- [Prins Car Rental](https://www.prinscarrental.com/)
 	- [Budget Car Rental](https://www.curacao-budgetcar.com/)
 	- [Alamo Car Rental](https://www.alamo-curacao.com/)
