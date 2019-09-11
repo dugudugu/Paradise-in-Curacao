@@ -1,571 +1,589 @@
 body {
-height:100%;
-margin:0;
-font-family:'Alegreya',serif;
-font-size:15px
+	height: 100%;
+	margin: 0;
+	font-family: 'Alegreya', serif;
+	font-size: 15px
 }
 
 h5 {
-font-weight:700;
-color:#000;
-font-size:20px!important
+	font-weight: 700;
+	color: #000;
+	font-size: 20px
+}
+
+h1 {	
+	font-weight: 700;
+	font-size: 30px
 }
 
 a {
-color:#000;
-background-color:transparent;
-text-decoration:none
+	color: #000;
+	background-color: transparent;
+	text-decoration: none
 }
 
+
+
 .navbar {
-display:flex;
-background-color:#5fa6c0;
-padding:5px 20px
+	display: flex;
+	background-color: #5fa6c0;
+	padding: 5px 20px
 }
 
 .nav-link {
-display:block;
-padding:8px 16px;
-font-weight:700
+	display: block;
+	padding: 8px 16px;
+	font-weight: 700
 }
 
 .nav-item {
-font-family:'Alegreya',serif;
-font-size:20px;
-margin-left:10px
+	font-family: 'Alegreya', serif;
+	font-size: 20px;
+	margin-left: 10px
 }
 
 .cover-image {
-width:100%;
-height:75%;
-margin-top:50px
+	width: 100%;
+	height: 75%;
+	margin-top: 50px
 }
 
-.about,.hotels,.restaurant-header,.car-header,.places {
-text-align:center;
-padding-top:50px;
-padding-bottom:20px
+.about,
+.hotels,
+.restaurant-header,
+.car-header,
+.places {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px
 }
 
-.about h1,.hotels h1,.restaurant-header h1,.car-header h1,.places h1 {
-font-weight:700;
-font-size:30px
-}
-
-.about p,.hotels p,.restaurant-header p,.places p {
-font-style:italic;
-font-size:20px
+.about p,
+.hotels p,
+.restaurant-header p,
+.places p {
+	font-style: italic;
+	font-size: 20px
 }
 
 .card {
-padding:10px;
-overflow:auto
+	padding: 10px;
+	overflow: auto
 }
 
 .about-cards {
-display:grid;
-margin:20px 50px;
-grid-template-columns:repeat(5,1fr);
-grid-column-gap:1em;
-grid-template-rows:repeat(3,200px);
-grid-row-gap:1em;
-grid-template-areas:"intro1 intro1 image1 intro2 intro2" "image2 intro3 intro3 intro3 image4" "intro5 intro5 image3 intro4 intro4"
+	display: grid;
+	margin: 20px 50px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 1em;
+	grid-template-rows: repeat(3, 200px);
+	grid-row-gap: 1em;
+	grid-template-areas: "intro1 intro1 image1 intro2 intro2" "image2 intro3 intro3 intro3 image4" "intro5 intro5 image3 intro4 intro4"
 }
 
 .intro1 {
-grid-area:intro1;
-width:100%
+	grid-area: intro1;
+	width: 100%
 }
 
 .intro2 {
-grid-area:intro2;
-width:100%
+	grid-area: intro2;
+	width: 100%
 }
 
 .intro3 {
-grid-area:intro3;
-width:100%;
-justify-content:center
+	grid-area: intro3;
+	width: 100%;
+	justify-content: center
 }
 
 .intro4 {
-grid-area:intro4;
-width:100%
+	grid-area: intro4;
+	width: 100%
 }
 
 .intro5 {
-grid-area:intro5;
-width:100%
+	grid-area: intro5;
+	width: 100%
 }
 
 .about-cards img {
-width:100%;
-height:100%
+	width: 100%;
+	height: 100%
 }
 
 .image1 {
-grid-area:image1
+	grid-area: image1
 }
 
 .image2 {
-grid-area:image2
+	grid-area: image2
 }
 
 .image3 {
-grid-area:image3
+	grid-area: image3
 }
 
 .image4 {
-grid-area:image4
+	grid-area: image4
 }
 
 .about-cards h5 {
-text-align:center!important
+	text-align: center
 }
 
 .about-cards .card-text {
-text-align:center
+	text-align: center
 }
 
 .hotel-cards {
-display:grid;
-margin:20px 50px;
-grid-template-columns:repeat(2,1fr);
-grid-column-gap:1em;
-grid-template-rows:repeat(4,150px);
-grid-row-gap:1em;
-grid-template-areas:"hotel1 hotel2" "hotel1 hotel3" "hotel1 hotel4" "hotel1 hotel5"
+	display: grid;
+	margin: 20px 50px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 1em;
+	grid-template-rows: repeat(4, 150px);
+	grid-row-gap: 1em;
+	grid-template-areas: "hotel1 hotel2" "hotel1 hotel3" "hotel1 hotel4" "hotel1 hotel5"
 }
 
 .hotel1 {
-grid-area:hotel1;
-flex-direction:column;
-width:100%;
-text-align:center
+	grid-area: hotel1;
+	flex-direction: column;
+	width: 100%;
+	text-align: center
 }
 
 .hotel1 .card-body {
-padding:10px
+	padding: 10px
 }
 
-.hotel1 .card-body .list-unstyled .fas {
-color:#ffd700
+.fas {
+	color: #ffd700
 }
 
 .fa-wifi:before {
-content:"\f1eb";
-padding:10px;
-color:green
+	content: "\f1eb";
+	padding: 10px;
+	color: green
 }
 
 .fa-swimmer:before {
-content:"\f5c4";
-padding:10px;
-color:blue
+	content: "\f5c4";
+	padding: 10px;
+	color: blue
 }
 
 .fa-umbrella-beach:before {
-content:"\f5ca";
-padding:5px;
-color:#ff7f50
+	content: "\f5ca";
+	padding: 5px;
+	color: #ff7f50
 }
 
 .hotel2 {
-grid-area:hotel2;
-display:flex;
-flex-direction:row;
-width:100%
+	grid-area: hotel2;
+	display: flex;
+	flex-direction: row;
+	width: 100%
 }
 
 .hotel3 {
-grid-area:hotel3;
-display:flex;
-flex-direction:row;
-width:100%
+	grid-area: hotel3;
+	display: flex;
+	flex-direction: row;
+	width: 100%
 }
 
 .hotel4 {
-grid-area:hotel4;
-display:flex;
-flex-direction:row;
-width:100%
+	grid-area: hotel4;
+	display: flex;
+	flex-direction: row;
+	width: 100%
 }
 
 .hotel5 {
-grid-area:hotel5;
-display:flex;
-flex-direction:row;
-width:100%
+	grid-area: hotel5;
+	display: flex;
+	flex-direction: row;
+	width: 100%
 }
 
 .hotel-cards .card .text-block {
-padding-left:20px
+	padding-left: 20px
 }
 
 .hotel-cards .card .card-title {
-text-align:left;
-font-weight:700;
-color:#000;
-font-size:20px!important
+	text-align: left;
+	font-weight: 700;
+	color: #000;
+	font-size: 20px
 }
 
 .restaurants {
-display:grid;
-margin:20px 50px;
-grid-template-columns:repeat(2,1fr);
-grid-column-gap:1em;
-grid-template-rows:repeat(1,500px);
-grid-template-areas:"rest-list rest-map"
+	display: grid;
+	margin: 20px 50px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 1em;
+	grid-template-rows: repeat(1, 500px);
+	grid-template-areas: "rest-list rest-map"
 }
 
 .restaurant-map {
-grid-area:rest-map;
-width:100%
+	grid-area: rest-map;
+	width: 100%
 }
 
 .gm-style-iw {
-height:400px!important;
-width:225px!important;
-top:10px!important;
-left:0!important;
-box-shadow:0 1px 6px rgba(178,178,178,0.6);
-border-radius:2px 2px 10px 10px
+	height: 400px;
+	width: 225px;
+	top: 10px;
+	left: 0;
+	box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+	border-radius: 2px 2px 10px 10px
 }
 
 #iw-container {
-margin-bottom:10px
+	margin-bottom: 10px
 }
 
 #iw-container .iw-title {
-font-weight:700;
-padding:10px 10px 0
+	font-weight: 700;
+	padding: 10px 10px 0
 }
 
 #iw-container .iw-content {
-text-align:center;
-padding:10px
+	text-align: center;
+	padding: 10px
 }
 
 #iw-container .iw-content p {
-font-size:15px;
-font-weight:300;
-text-align:center;
-padding:10px;
-margin:0
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px;
+	margin: 0
 }
 
 #iw-container .iw-content button {
--moz-box-shadow:0 9px 14px -7px #276873;
--webkit-box-shadow:0 9px 14px -7px #276873;
-box-shadow:0 9px 14px -7px #276873;
-background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#599bb3),color-stop(1,#408c99));
-background:-moz-linear-gradient(top,#599bb3 5%,#408c99 100%);
-background:-webkit-linear-gradient(top,#599bb3 5%,#408c99 100%);
-background:-o-linear-gradient(top,#599bb3 5%,#408c99 100%);
-background:-ms-linear-gradient(top,#599bb3 5%,#408c99 100%);
-background:linear-gradient(to bottom,#599bb3 5%,#408c99 100%);
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3',endColorstr='#408c99',GradientType=0);
-background-color:#599bb3;
--moz-border-radius:8px;
--webkit-border-radius:8px;
-border-radius:8px;
-display:inline-block;
-cursor:pointer;
-color:#fff;
-font-family:Arial;
-font-size:16px;
-font-weight:700;
-padding:10px 15px;
-text-decoration:none
+	-moz-box-shadow: 0 9px 14px -7px #276873;
+	-webkit-box-shadow: 0 9px 14px -7px #276873;
+	box-shadow: 0 9px 14px -7px #276873;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background: -moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background: -webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99', GradientType=0);
+	background-color: #599bb3;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px 15px;
+	text-decoration: none
 }
 
 #iw-container .iw-content button:hover {
-background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#408c99),color-stop(1,#599bb3));
-background:-moz-linear-gradient(top,#408c99 5%,#599bb3 100%);
-background:-webkit-linear-gradient(top,#408c99 5%,#599bb3 100%);
-background:-o-linear-gradient(top,#408c99 5%,#599bb3 100%);
-background:-ms-linear-gradient(top,#408c99 5%,#599bb3 100%);
-background:linear-gradient(to bottom,#408c99 5%,#599bb3 100%);
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99',endColorstr='#599bb3',GradientType=0);
-background-color:#408c99
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background: -webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3', GradientType=0);
+	background-color: #408c99
 }
 
 #iw-container .iw-content button:active {
-position:relative;
-top:1px
+	position: relative;
+	top: 1px
 }
 
 .restaurant-list {
-grid-area:rest-list;
-width:100%
+	grid-area: rest-list;
+	width: 100%
 }
 
 .restaurant-list ul {
-list-style:none;
-max-height:450px;
-overflow:auto
+	list-style: none;
+	max-height: 450px;
+	overflow: auto
 }
 
 .restaurant-list ul li:hover {
-background-color:rgba(95,165,191,0.2)
+	background-color: rgba(95, 165, 191, 0.2)
 }
 
 .car-cards {
-display:grid;
-margin:20px 50px;
-grid-template-columns:repeat(5,1fr);
-grid-column-gap:2em;
-grid-template-rows:repeat(2,250px);
-grid-row-gap:2em;
-grid-template-areas:". car1 car2 car3 ." ". car4 car5 car6 ."
+	display: grid;
+	margin: 20px 50px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 2em;
+	grid-template-rows: repeat(2, 250px);
+	grid-row-gap: 2em;
+	grid-template-areas: ". car1 car2 car3 ." ". car4 car5 car6 ."
 }
 
 .car-img {
-width:100%;
-max-height:100%
+	width: 100%;
+	max-height: 100%
 }
 
 .car1 {
-grid-area:car1;
-width:100%;
-text-align:center
+	grid-area: car1;
+	width: 100%;
+	text-align: center
 }
 
 .car2 {
-grid-area:car2;
-width:100%;
-text-align:center
+	grid-area: car2;
+	width: 100%;
+	text-align: center
 }
 
 .car3 {
-grid-area:car3;
-width:100%;
-text-align:center
+	grid-area: car3;
+	width: 100%;
+	text-align: center
 }
 
 .car4 {
-grid-area:car4;
-width:100%;
-text-align:center
+	grid-area: car4;
+	width: 100%;
+	text-align: center
 }
 
 .car5 {
-grid-area:car5;
-width:100%;
-text-align:center
+	grid-area: car5;
+	width: 100%;
+	text-align: center
 }
 
 .car6 {
-grid-area:car6;
-width:100%;
-text-align:center
+	grid-area: car6;
+	width: 100%;
+	text-align: center
 }
 
 .car-cards .container:hover .car-img {
-opacity:.5
+	opacity: .5
 }
 
 .places-cards {
-display:grid;
-margin:20px 50px;
-grid-template-columns:repeat(4,1fr);
-grid-column-gap:1em;
-grid-template-rows:repeat(2,250px);
-grid-row-gap:1em;
-grid-template-areas:"place1 place2 place3 place4" "place5 place6 place7 place8"
+	display: grid;
+	margin: 20px 50px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 1em;
+	grid-template-rows: repeat(2, 250px);
+	grid-row-gap: 1em;
+	grid-template-areas: "place1 place2 place3 place4" "place5 place6 place7 place8"
 }
 
 .place1 {
-grid-area:place1;
-width:100%
+	grid-area: place1;
+	width: 100%
 }
 
 .place2 {
-grid-area:place2;
-width:100%
+	grid-area: place2;
+	width: 100%
 }
 
 .place3 {
-grid-area:place3;
-width:100%
+	grid-area: place3;
+	width: 100%
 }
 
 .place4 {
-grid-area:place4;
-width:100%
+	grid-area: place4;
+	width: 100%
 }
 
 .place5 {
-grid-area:place5;
-width:100%
+	grid-area: place5;
+	width: 100%
 }
 
 .place6 {
-grid-area:place6;
-width:100%
+	grid-area: place6;
+	width: 100%
 }
 
 .place7 {
-grid-area:place7;
-width:100%
+	grid-area: place7;
+	width: 100%
 }
 
 .place8 {
-grid-area:place8;
-width:100%
+	grid-area: place8;
+	width: 100%
 }
 
 .places-cards .place-img {
-display:block;
-height:100%;
-width:100%;
-object-fit:cover;
-opacity:1;
-transition:.5s ease;
-backface-visibility:hidden
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden
 }
 
 .place-container {
-position:relative
+	position: relative
 }
 
 .placetext {
-transition:.5s ease;
-opacity:0;
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
--ms-transform:translate(-50%,-50%);
-text-align:center
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center
 }
 
 .place-container:hover .place-img {
-opacity:.25
+	opacity: .25
 }
 
 .place-container:hover .placetext {
-opacity:1
+	opacity: 1
 }
 
 .placetext .text {
-background-color:rgba(95,165,191);
-color:#000;
-font-size:20px;
-padding:5px
+	background-color: #5fa5bf;
+	color: #000;
+	font-size: 20px;
+	padding: 5px
 }
 
 .mobile-rest {
-margin-left:20px;
-margin-right:20px
+	margin-left: 20px;
+	margin-right: 20px
 }
 
 .fa-angle-double-right:before {
-content:"\f101";
-color:#5fa6c0;
-font-size:20px
+	content: "\f101";
+	color: #5fa6c0;
+	font-size: 20px
 }
 
 .page-footer {
-background-color:#5fa6c0
+	background-color: #5fa6c0
 }
 
 .footer-icons {
-font-size:2rem
+	font-size: 2rem
 }
 
 .footer-copyright {
-color:#000;
-font-size:25px
+	color: #000;
+	font-size: 25px
 }
 
 @media only screen and (max-width: 768px) {
-main {
-margin:5px!important
-}
+	main {
+		margin: 5px
+	}
 
-.navbar {
-background-color:rgba(95,165,191,0.2)
-}
+	.navbar {
+		background-color: rgba(95, 165, 191, 0.2)
+	}
 
-.navbar-fixed-top {
-position:relative;
-top:auto
-}
+	.navbar-fixed-top {
+		position: relative;
+		top: auto
+	}
 
-.navbar li {
-background-color:#5fa6c0
-}
+	.navbar li {
+		background-color: #5fa6c0
+	}
 
-.about,.hotels,.restaurant-header,.car-header,.places {
-text-align:center;
-padding-top:25px;
-padding-bottom:10px;
-margin-left:10px;
-margin-right:10px
-}
+	.about,
+	.hotels,
+	.restaurant-header,
+	.car-header,
+	.places {
+		text-align: center;
+		padding-top: 25px;
+		padding-bottom: 10px;
+		margin-left: 10px;
+		margin-right: 10px
+	}
 
-.card {
-justify-content:center
-}
+	.card {
+		justify-content: center
+	}
 
-.about-cards {
-display:grid;
-margin:2px 5px;
-grid-template-columns:1fr;
-grid-column-gap:1em;
-grid-template-rows:repeat(5,250px);
-grid-row-gap:1em;
-grid-template-areas:intro1 image2 intro2 image1 intro3
-}
+	.about-cards {
+		display: grid;
+		margin: 2px 5px;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(5, 250px);
+		grid-row-gap: 1em;
+		grid-template-areas: "intro1" "image2" "intro2" "image1" "intro3"
+	}
 
-.intro4,.intro5,.image3,.image4 {
-display:none
-}
+	.intro4,
+	.intro5,
+	.image3,
+	.image4 {
+		display: none
+	}
 
-.hotel-cards {
-display:grid;
-margin:2px 5px;
-grid-template-columns:1fr;
-grid-column-gap:1em;
-grid-template-rows:repeat(4,200px);
-grid-row-gap:1em;
-grid-template-areas:hotel2 hotel3 hotel4 hotel5
-}
+	.hotel-cards {
+		display: grid;
+		margin: 2px 5px;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 200px);
+		grid-row-gap: 1em;
+		grid-template-areas: "hotel2" "hotel3" "hotel4" "hotel5"
+	}
 
-.hotel1 {
-display:none
-}
+	.hotel1 {
+		display: none
+	}
 
-.restaurants {
-display:none
-}
+	.restaurants {
+		display: none
+	}
 
-.car-cards {
-display:grid;
-margin:2px 5px;
-grid-template-columns:repeat(2,1fr);
-grid-column-gap:1em;
-grid-template-rows:repeat(2,100px);
-grid-row-gap:1em;
-grid-template-areas:"car1 car2" "car3 car4"
-}
+	.car-cards {
+		display: grid;
+		margin: 2px 5px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 1em;
+		grid-template-rows: repeat(2, 100px);
+		grid-row-gap: 1em;
+		grid-template-areas: "car1 car2" "car3 car4"
+	}
 
-.car5,.car6 {
-display:none
-}
+	.car5,
+	.car6 {
+		display: none
+	}
 
-.places-cards {
-display:grid;
-margin:2px 5px;
-grid-template-columns:repeat(2,1fr);
-grid-column-gap:1em;
-grid-template-rows:repeat(2,150px);
-grid-row-gap:1em;
-grid-template-areas:"place1 place2" "place5 place6"
-}
+	.places-cards {
+		display: grid;
+		margin: 2px 5px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 1em;
+		grid-template-rows: repeat(2, 150px);
+		grid-row-gap: 1em;
+		grid-template-areas: "place1 place2" "place5 place6"
+	}
 
-.place3,.place4,.place7,.place8 {
-display:none
-}
+	.place3,
+	.place4,
+	.place7,
+	.place8 {
+		display: none
+	}
 }
