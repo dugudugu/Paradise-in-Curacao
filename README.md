@@ -6,7 +6,8 @@
 
 ## Introduction
 
-[View web page in GitHub Pages](https://github.com/dugudugu/Paradise-in-Curacao)
+This webpage offer solution to everyone who would like to go to Curacao, is looking for their next vacation destination. You will find almost everyting you need for a nice vacation on the Island on **One Page**. From hotels, to car-rentals and restaurant but don't forget about the activities!. A "One Stop Shop" for your vacation in [Curacao](https://dugudugu.github.io/Paradise-in-Curacao/). 
+
 
 ## UX
 
@@ -53,6 +54,7 @@ For the webframe I have created two diffrent versions. One for mobile devices (m
 * Adding google maps marking coorinats from database instead of writing in a JSON file
 * Add intersection observer to the webpage to improve loading speed
 * Reduce image size to lower the ammount op dat usage and improve loading speed
+* Add an event to change opacity of the scrollbar when scrolling on mobile devices
 
 ## List of technologies used
 
@@ -85,23 +87,50 @@ For the webframe I have created two diffrent versions. One for mobile devices (m
 
 ### Online Testing
 
-- Used [HTML Validator](https://validator.w3.org/) to check the markup. The results of this validator were 7 Error and 3 Warnings 
-- Used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to check CSS3 for any errors. "Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
+- Used [HTML Validator](https://www.cssportal.com/html-validator/) to check the markup. The results of this validator were 5 Errors and 3 Warnings.
+	- 4 error messages are begin triggered by links of hotels, the validator expected to have digits present after a # sign in the booking.com links
+		- I think by replacing the links with an other one, that is correctly written would solve the issue 
+	- 1 error message is begin caused by bad value for a crossorigin in the boostrap.min.js script
+		- A solution to solve this issue might be removing the crossorigin, but when I did that chrome.dev showed more error. The other option would be to find the propper crossorigin
+	- 2 warning messages are being showed for lacking heading in sections of car-cards and place cards
+	- 1 warning message is being cause by wrong unnecessary attribute  for JavaScript resources
+- Used [CSS Portal](https://www.cssportal.com/css-validator/) to check CSS for any errors. This resulted in 44 Errors and 704 Warning. These error and warning are being caused by bootstrap script
+	- For future project try not to use bootstrap as it loads unnecessary styling, these leads to larger cache and can delay loading page time
 - Used [JSHint](https://jshint.com/) and [Piliapp](https://www.piliapp.com/javascript-validator/) to validate the JavaScript
 - I ran my page on [web.dev](https://web.dev/) and this is the [report](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://dugudugu.github.io/Paradise-in-Curacao/)
 
 
 ## Deployment
-This project has been build in [Cloud9 IDE](https://aws.amazon.com/cloud9/), committed to Git and than pushed to [GitHub](https://github.com/)
-- This site can be deployed at [github](https://github.com/dugudugu/Paradise-in-Curacao).
-- There is no difference between the deployed version and the developed version
-- Just click on the [link](https://dugudugu.github.io/Paradise-in-Curacao/) to view the web page
+
+This project has been build with the help of [Cloud9 IDE](https://aws.amazon.com/cloud9/), Commited to Git and Pushed to GitHub using built in functions within Cloud9.
+
+### Deploy webpage from GitHub
+
+To deploy the webpage from its [GitHub Repository](https://github.com/dugudugu/Paradise-in-Curacao) the following steps should be taken:
+	1. Login to Github
+	2. Search for the following repository: **dugudufu/Paradise-in-Curacao** and select it
+	3. Select the **Setting** button
+	4. Scrolldown to **GitHub** Pages section
+	5. Under **Source**, select **Master Brach** by clicking on the dropdown menu
+	6. Uppon refreshing the page, the repository will be deployed
+	7. The deployment link can be found by scroling down to the GitHub Pages
+
+### How to clone the repository from GitHub
+This procedure assumes that the developer already created a repository or have an exciting owned by someone else.
+	1. On GitHub, navigate to the main page of the repository
+	2. Under the repository name, click **Clone or Download**
+	3. In the Clone with HTTPs section, copy the clone URL
+	4. Open Git Bash
+	5. Change the working directory to where the cloned directory should be
+	6. Type **git clone**, and then paste the URL
+	7. Press **Enter** and the clone will be created
 
 
 ## Credits
 
 
 #### Content
+
 * The design idea for this page came from [Get Your Guide](https://www.getyourguide.com/)
 * The following sources were used for the content of this page:
 	- [Booking.com](https://www.booking.com/)
@@ -110,6 +139,7 @@ This project has been build in [Cloud9 IDE](https://aws.amazon.com/cloud9/), com
 	
 
 #### Media
+
 For the Images of the webpage the following were used:
 	- [Booking.com](https://www.booking.com/)
 	- [Tripadvisor](http://tripadvisor.com/)
@@ -122,6 +152,7 @@ For the Images of the webpage the following were used:
 
 
 #### Code
+
 * For the basic JavaScript code the following sources were used:
 	- [17 Education, Article By Marimuthu](http://www.17educations.com/trigger-google-map-marker-infowindow/)
 	- [StackOverflow, Answer from Geocodezip](https://stackoverflow.com/questions/53436428/marker-clustering-google-maps-api)
@@ -133,7 +164,7 @@ For the Images of the webpage the following were used:
 
 Mr. Rahul Lakhanpal, I would like to let you know that I am grateful for your help, motivation and mentoring during this project.
 
-I would also like to thank the following people for the feedback to make the web page better; C. Harms, A. Marchena and anyone else that I might have forgotten. 
+I would also like to thank the following people for the feedback to make the web page better; C. Harms, A. Marchena, the Slack Community and anyone else that I might have forgotten. 
 
 
 
