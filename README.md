@@ -26,13 +26,13 @@ For the webframe I have created two diffrent versions. One for mobile devices (m
 <div align="center">
 	<a href="https://dugudugu.github.io/Paradise-in-Curacao/">
 	<h4>Desktop Version (min-width: 768px)</h4>
-	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/wireframes/wireframe-pc.jpg"/></a>
+	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/wireframe/wireframe-pc.jpg"/></a>
 </div>
 
 <div align="center">
 	<a href="https://dugudugu.github.io/Paradise-in-Curacao/">
 	<h4>Mobile Version (max-width: 768px)</h4>
-	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/assets/wireframes/wireframe-mobile.jpg"/></a>
+	<img src="https://github.com/dugudugu/Paradise-in-Curacao/blob/master/wireframe/wireframe-mobile.jpg"/></a>
 </div>
 
 
