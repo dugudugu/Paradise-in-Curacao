@@ -218,6 +218,32 @@ a {
 	font-size: 20px
 }
 
+
+.divider {
+    background-color: #2C63A3;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+.divider-info {
+	justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.divider-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff
+}
+
+.divider-text{
+    font-size: 25px;
+    font-style: italic;
+    color: #fff
+}
+
 .restaurants {
 	display: grid;
 	margin: 20px 50px;
