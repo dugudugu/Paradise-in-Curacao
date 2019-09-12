@@ -71,6 +71,10 @@ hr {
 	overflow: auto
 }
 
+.justify-card{
+	justify-content: center
+}
+
 .about-cards {
 	display: grid;
 	margin: 20px 50px;
@@ -83,28 +87,27 @@ hr {
 
 .intro1 {
 	grid-area: intro1;
-	width: 100%
+	width: 100%;
 }
 
 .intro2 {
 	grid-area: intro2;
-	width: 100%
+	width: 100%;
 }
 
 .intro3 {
 	grid-area: intro3;
 	width: 100%;
-	justify-content: center
 }
 
 .intro4 {
 	grid-area: intro4;
-	width: 100%
+	width: 100%;
 }
 
 .intro5 {
 	grid-area: intro5;
-	width: 100%
+	width: 100%;
 }
 
 .about-cards img {
