@@ -55,6 +55,7 @@ For the webframe I have created two diffrent versions. One for mobile devices (m
 * Add intersection observer to the webpage to improve loading speed
 * Reduce image size to lower the ammount op dat usage and improve loading speed
 * Add an event to change opacity of the scrollbar when scrolling on mobile devices
+* Add an event in the JavaScript so that the markers only shown when you click on a restaurant
 
 ## List of technologies used
 
@@ -68,6 +69,7 @@ For the webframe I have created two diffrent versions. One for mobile devices (m
 * Font Awesome
 * CSS Button Generator
 * Google Maps Platform
+* Cloudinary
 * Code Validators and Beautifiers: CSS Compressor, Terser REPL, CSS Validator, HTML Validator and Web.dev
 
 
