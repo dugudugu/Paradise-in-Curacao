@@ -109,23 +109,24 @@ This project has been build with the help of [Cloud9 IDE](https://aws.amazon.com
 ### Deploy webpage from GitHub
 
 To deploy the webpage from its [GitHub Repository](https://github.com/dugudugu/Paradise-in-Curacao) the following steps should be taken:
-	1. Login to Github
-	2. Search for the following repository: **dugudufu/Paradise-in-Curacao** and select it
-	3. Select the **Setting** button
-	4. Scrolldown to **GitHub** Pages section
-	5. Under **Source**, select **Master Brach** by clicking on the dropdown menu
-	6. Uppon refreshing the page, the repository will be deployed
-	7. The deployment link can be found by scroling down to the GitHub Pages
+1. Login to Github
+2. Search for the following repository: **dugudufu/Paradise-in-Curacao** and select it
+3. Select the **Setting** button
+4. Scrolldown to **GitHub** Pages section
+5. Under **Source**, select **Master Brach** by clicking on the dropdown menu
+6. Uppon refreshing the page, the repository will be deployed
+7. The deployment link can be found by scroling down to the GitHub Pages
 
 ### How to clone the repository from GitHub
+
 This procedure assumes that the developer already created a repository or have an exciting owned by someone else.
-	1. On GitHub, navigate to the main page of the repository
-	2. Under the repository name, click **Clone or Download**
-	3. In the Clone with HTTPs section, copy the clone URL
-	4. Open Git Bash
-	5. Change the working directory to where the cloned directory should be
-	6. Type **git clone**, and then paste the URL
-	7. Press **Enter** and the clone will be created
+1. On GitHub, navigate to the main page of the repository
+2. Under the repository name, click **Clone or Download**
+3. In the Clone with HTTPs section, copy the clone URL
+4. Open Git Bash
+5. Change the working directory to where the cloned directory should be
+6. Type **git clone**, and then paste the URL
+7. Press **Enter** and the clone will be created
 
 
 ## Credits
@@ -143,14 +144,14 @@ This procedure assumes that the developer already created a repository or have a
 #### Media
 
 For the Images of the webpage the following were used:
-	- [Booking.com](https://www.booking.com/)
-	- [Tripadvisor](http://tripadvisor.com/)
-	- [Platina Car Rental](https://www.platinacarrental.com/)
-	- [Prins Car Rental](https://www.prinscarrental.com/)
-	- [Budget Car Rental](https://www.curacao-budgetcar.com/)
-	- [Alamo Car Rental](https://www.alamo-curacao.com/)
-	- [DD Car Rental](https://www.ddcarrental.com/)
-	- [GH Car Rental](http://www.gh-autoverhuur.nl/)
+* [Booking.com](https://www.booking.com/)
+* [Tripadvisor](http://tripadvisor.com/)
+* [Platina Car Rental](https://www.platinacarrental.com/)
+* [Prins Car Rental](https://www.prinscarrental.com/)
+* [Budget Car Rental](https://www.curacao-budgetcar.com/)
+* [Alamo Car Rental](https://www.alamo-curacao.com/)	
+* [DD Car Rental](https://www.ddcarrental.com/)
+* [GH Car Rental](http://www.gh-autoverhuur.nl/)
 
 
 #### Code
@@ -159,7 +160,7 @@ For the Images of the webpage the following were used:
 	- [17 Education, Article By Marimuthu](http://www.17educations.com/trigger-google-map-marker-infowindow/)
 	- [StackOverflow, Answer from Geocodezip](https://stackoverflow.com/questions/53436428/marker-clustering-google-maps-api)
 	- [Google Maps Platform](https://developers.google.com/maps/documentation/javascript/marker-clustering)
-* For the Nabar and footer, the original code was taken from [Material Design for Bootsrap](https://mdbootstrap.com/) and then edited.
+* For the Nabar and footer, the original code was taken from [Material Design for Bootsrap](https://mdbootstrap.com/) and then edited
 
 
 ### Acknowledgements
