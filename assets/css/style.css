@@ -23,8 +23,9 @@ a {
 }
 
 hr {
-	margin: 50px 0px 75px;
+	margin: 50px 0px 75px
 }
+
 .navbar {
 	display: flex;
 	background-color: #5fa6c0;
@@ -501,11 +502,13 @@ hr {
 }
 
 .page-footer {
-	background-color: #5fa6c0
+	background-color: #5fa6c0;
+	padding-top: 10px;
+	padding-bottom: 10px
 }
 
 .footer-icons {
-	font-size: 32px
+	font-size: 25px
 }
 
 .footer-copyright {
