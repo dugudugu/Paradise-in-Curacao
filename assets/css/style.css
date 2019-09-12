@@ -22,6 +22,9 @@ a {
 	text-decoration: none
 }
 
+hr {
+	margin: 50px 0px 75px;
+}
 .navbar {
 	display: flex;
 	background-color: #5fa6c0;
